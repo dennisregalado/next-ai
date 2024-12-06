@@ -8,8 +8,8 @@ import useSWR, { useSWRConfig } from 'swr';
 import { useWindowSize } from 'usehooks-ts';
 
 import { ChatHeader } from '@/components/custom/chat-header';
-import { PreviewMessage, ThinkingMessage } from '@/components/custom/message';
 import { Conversation } from '@/components/custom/conversation';
+import { PreviewMessage, ThinkingMessage } from '@/components/custom/message';
 import { useScrollToBottom } from '@/components/custom/use-scroll-to-bottom';
 import { Database } from '@/lib/supabase/types';
 import { fetcher } from '@/lib/utils';
