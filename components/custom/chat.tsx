@@ -9,6 +9,7 @@ import { useWindowSize } from 'usehooks-ts';
 
 import { ChatHeader } from '@/components/custom/chat-header';
 import { PreviewMessage, ThinkingMessage } from '@/components/custom/message';
+import { Conversation } from '@/components/custom/conversation';
 import { useScrollToBottom } from '@/components/custom/use-scroll-to-bottom';
 import { Database } from '@/lib/supabase/types';
 import { fetcher } from '@/lib/utils';
@@ -131,6 +132,7 @@ export function Chat({
           />
         </form>
       </div>
+      <Conversation />
 
       <AnimatePresence>
         {block && block.isVisible && (
