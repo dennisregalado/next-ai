@@ -14,4 +14,11 @@ const nextConfig: NextConfig = {
   },
 };
 
+if (process.env.NEXT_PUBLIC_TEMPO) {
+  nextConfig['experimental'] = {
+    ppr: true,
+    swcPlugins: [[require.resolve('tempo-devtools/swc'), {}]],
+  };
+}
+
 export default nextConfig;

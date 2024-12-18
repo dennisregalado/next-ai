@@ -2,7 +2,8 @@ import { Metadata } from 'next';
 import { Toaster } from 'sonner';
 
 import { ThemeProvider } from '@/components/custom/theme-provider';
-
+import Script from "next/script";
+import Tempo from '@/components/custom/tempo-devtools';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -55,8 +56,11 @@ export default async function RootLayout({
             __html: THEME_COLOR_SCRIPT,
           }}
         />
+        <Script src="https://api.tempolabs.ai/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js" />
+
       </head>
       <body className="antialiased">
+        <Tempo />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

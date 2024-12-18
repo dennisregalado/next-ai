@@ -36,3 +36,9 @@ yarn-error.log*
 .vercel
 .vscode
 .env*.local
+
+# Tempo
+
+node_modules/
+**/tempobook/dynamic/
+**/tempobook/storyboards/
