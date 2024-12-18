@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '0.90':
-        specifier: link:tempo-devtools/swc/0.90
-        version: link:tempo-devtools/swc/0.90
       '@11labs/react':
         specifier: ^0.0.4
         version: 0.0.4(react@19.0.0-rc-45804af1-20241021)
