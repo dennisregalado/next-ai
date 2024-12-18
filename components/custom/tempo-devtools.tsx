@@ -1,3 +1,5 @@
+'use client';
+
 import { TempoDevtools } from "tempo-devtools";
 import { useEffect } from "react";
 
